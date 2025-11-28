@@ -1,0 +1,419 @@
+<!--comenzamos creando la estrucura basica
+de un documento html escribiendo <html y 
+teclenado enter para autocompletar, lo que creara
+la estructura que se llenara como se menciona a continuación...-->
+
+<!--indica el tipo de docuemnto-->
+<!DOCTYPE html>
+<!--dentro de l etiqueta html esta todo el contenido del documento html-->
+<html>
+<!------------encabezado de pagina----------->
+<!--dentro de la etiqueta head esta el encabezado del documento html-->
+
+<head>
+	<title>felxbox_01</title> <!--dentro de la etiqueta tittle esta el titulo de la página-->
+	<link rel='stylesheet' href='estilos.css' /> <!--dentro de esta etiqueta esta la referencia a la hoja de estilos-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--viewport para trabajar responsive design-->
+</head>
+
+<!------------body de pagina----------->
+<!--dentro de la estiqueta body tipicamente esta todo lo que contendra página-->
+
+<body>
+
+
+	<!--dentro de la estiqueta header esta todo lo que sera el encanbezado de la página, pudiendo colocarse dentro del body o antes del body-->
+	<header class='menu-container' id="inicio">
+
+		<div class='identificador'>
+			<!----modificar nombre y ruta de la imagen para cambiar el logo por el propio----->
+			<a href="main.html">
+				<img src="Images/LOUVRE.png"></a>
+
+		</div>
+
+		<div class='ligas-secciones'>
+			<!----modificar nombre de la seccion acorde a la necesidad----->
+			<a href="#secc1">Sobre el Museo del Louvre</a>
+			<a href="#secc2">Lumière Culture Festival</a>
+			<a href="#secc3">Ponentes</a>
+			<a href="#secc4">Literatura</a>
+			<a href="#secc5">Cinematografía</a>
+		</div>
+
+	</header>
+
+
+
+
+	<!--contenedor que agrupa todos los contenedores que tienen los contenidos de cada sección que aprecen entre el encabezado y pie de pagina-->
+	<main class="secciones">
+		<!--contenedor para contenidos de cada sección-->
+		<div class='seccion-contenedor' id="secc1">
+			<!--contenedor para el texto de cada sección-->
+			<div class="texto-secc">
+				<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+				<h1>Sobre el Museo del Louvre</h1>
+				<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+				<p>El Museo del Louvre es uno de los símbolos más reconocidos del arte y la cultura universal. Situado
+					en el corazón de París, a orillas del río Sena, fue inaugurado en 1793 y desde entonces se ha
+					consolidado como el museo más visitado del mundo, con una colección que abarca más de ocho mil años
+					de historia.
+					Antiguamente fue un palacio real, hogar de reyes y emperadores franceses. Su arquitectura combina
+					estilos medievales, renacentistas y modernos, siendo su elemento más icónico la Pirámide de vidrio
+					diseñada por el arquitecto Ieoh Ming Pei en 1989. Esta estructura, que hoy funge como entrada
+					principal, representa la fusión entre tradición y modernidad, valores centrales en la identidad del
+					museo.</p>
+				<br><!--etiqueta para un brinco de renglón-->
+				<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+				<p>El Louvre alberga más de 35,000 obras de arte, distribuidas en ocho departamentos:</p>
+				<ul class="texto-secc">
+					<li> Antigüedades Egipcias</li>
+					<li> Antigüedades Griegas, Etruscas y Romanas</li>
+					<li> Antigüedades del Cercano Oriente</li>
+					<li> Arte Islámico</li>
+					<li> Pintura</li>
+					<li> Escultura</li>
+					<li> Artes Gráficas</li>
+					<li> Artes Decorativas</li>
+				</ul>
+				<br><!--etiqueta para un brinco de renglón-->
+				<p> Entre sus piezas más reconocidas se encuentran:</p>
+				<ul class="lista-sin-puntos">
+					<li>🎨 La Gioconda de Leonardo da Vinci</li>
+					<li>🏺 La Venus de Milo</li>
+					<li>🗿 La Victoria de Samotracia</li>
+					<li>y numerosos tesoros del arte universal.</li>
+				</ul>
+				<p>Más que un museo, el Louvre es un símbolo del conocimiento, la luz y la preservación cultural, un
+					espacio donde el pasado dialoga con el presente a través del arte. Por ello, el Lumière Culture
+					Festival encuentra aquí su sede ideal, uniendo la herencia histórica del museo con una propuesta
+					contemporánea de reflexión, cine y literatura.</p>
+				<br><!--etiqueta para un brinco de renglón-->
+			</div>
+			<!--contenedor para las imagenes de la sección 1, OJO: este tiene un layout para dos imagenes-->
+			<div class="imgs-secc-1">
+				<iframe width="90%" height="500px" allowFullScreen="true"
+					allow="accelerometer; magnetometer; gyroscope; xr-spatial-tracking"
+					style="display:block; margin:20px auto; border:0 none; max-width:880px;border-radius:8px; box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);"
+					src="https://panoraven.com/es/embed/7LCjlf4vpx"></iframe>
+			</div>
+			<!--contenedor con las dos imagenes en su version mobile-->
+			<div class="par-imgs-mobile">
+				<iframe width="90%" height="500px" allowFullScreen="true"
+					allow="accelerometer; magnetometer; gyroscope; xr-spatial-tracking"
+					style="display:block; margin:20px auto; border:0 none; max-width:880px;border-radius:8px; box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);"
+					src="https://panoraven.com/es/embed/7LCjlf4vpx"></iframe>
+			</div>
+		</div>
+
+		</div>
+
+		<!--contenedor para contenidos de cada sección-->
+		<div class='seccion-contenedor' id="secc2">
+			<!--contenedor para el texto de cada sección-->
+			<div class="texto-secc">
+				<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+				<h1>Lumière Culture Festival</h1>
+				<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+				<p>LEl Lumière Culture Festival nace como una iniciativa que une el arte, la literatura y el cine en un
+					mismo espacio, con el propósito de promover el diálogo entre la tradición cultural y las nuevas
+					expresiones creativas del mundo contemporáneo. Inspirado en la palabra francesa Lumière (luz), el
+					festival simboliza el conocimiento, la historia y la constante búsqueda de la verdad a través del
+					arte.
+					Celebrado en los alrededores del Museo del Louvre, este festival invita al público a experimentar
+					una conexión profunda con la cultura, combinando exposiciones, conferencias, proyecciones
+					cinematográficas y experiencias digitales inmersivas. Su propuesta busca iluminar la mente y los
+					sentidos, fomentando la reflexión sobre los grandes temas que definen nuestra sociedad moderna: la
+					libertad, la conciencia, la identidad y el poder de la información.
+					Durante el festival, los asistentes podrán disfrutar de una programación interdisciplinaria que
+					incluye:</p>
+				<br>
+				<ul>
+					<li>Charlas con pensadores y escritores contemporáneos.</li>
+					<li>Reseñas literarias de obras como 1984, Un Mundo Feliz y Confesiones de un sicario económico.
+					</li>
+					<li>Proyecciones de películas de crítica social como Zeitgeist, Land of the Blind y The Money
+						Masters.</li>
+					<li>Un recorrido virtual 360° por el Louvre y sus alrededores, donde la arquitectura y la luz se
+						convierten en protagonistas.</li>
+				</ul>
+				<br>
+
+				<br><!--etiqueta para un brinco de renglón-->
+			</div>
+			<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+			<div class="contenedor-imagen">
+				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+				<img src="Images/LCF.png" title="Img 2">
+				<!--texto para la imagen-->
+				<p>El Lumière Culture Festival no solo celebra el arte, sino que lo transforma en una experiencia
+					sensorial y reflexiva, invitando al espectador a mirar el mundo desde nuevas perspectivas. Con una
+					estética que combina lo clásico y lo contemporáneo, este evento representa el encuentro entre la
+					herencia cultural y la innovación tecnológica.
+				</p>
+			</div>
+
+		</div>
+
+		<!--contenedor para contenidos de cada sección-->
+		<div class='seccion-contenedor' id="secc3" style="display: block;">
+			<div class="texto-secc">
+				<h1>Ponentes</h1>
+				<p>El Lumière Culture Festival reúne a destacados pensadores y autores contemporáneos cuyas obras y
+					reflexiones invitan a analizar la relación entre el poder, la economía, la información y la libertad
+					humana.
+
+					Cada uno de ellos aporta una visión única que enriquece el diálogo entre arte, historia y
+					pensamiento crítico.</p>
+				<br>
+			</div>
+
+			<div class="fila-ponente">
+				<div class="info-ponente">
+					<p><strong>🎙️ Jorge Guerra</strong><br>
+						Autor e investigador independiente centrado en estructuras de poder ocultas, élites financieras
+						y dinámicas históricas no convencionales.
+						Su intervención en el Lumière Culture Festival gira en torno al tema “Nobleza Negra y los
+						poderes ocultos”, donde explorará cómo ciertas redes de influencia, silenciadas o marginales en
+						la historiografía convencional, siguen jugando un papel en la economía, la política y la cultura
+						contemporáneas.</p>
+				</div>
+				<div class="img-ponente">
+					<img src="Images/ponente1.png" alt="Jorge Guerra">
+				</div>
+			</div>
+
+			<div class="fila-ponente">
+				<div class="info-ponente">
+					<p><strong>📚 Antony Cyril Sutton (1925–2002)</strong><br>
+						Economista e historiador británico-estadounidense, Antony C. Sutton es reconocido por sus
+						investigaciones sobre la relación entre el poder económico y los conflictos políticos
+						internacionales.
+						Autor de obras como “Wall Street and the Rise of Hitler” y “The Federal Reserve Conspiracy”,
+						Sutton reveló la conexión entre las élites financieras y los grandes movimientos históricos del
+						siglo XX.
+						Su pensamiento, profundamente crítico, inspira el eje temático del festival: la búsqueda de la
+						transparencia, la justicia y el conocimiento histórico como herramientas de emancipación humana.
+						Durante el evento, se proyectarán extractos documentales basados en su legado intelectual.
+					</p>
+				</div>
+				<div class="img-ponente">
+					<img src="Images/ponente2.png" alt="Antony Sutton">
+				</div>
+			</div>
+
+			<div class="fila-ponente">
+				<div class="info-ponente">
+					<p><strong>🧠 Guillermo Mas Arellano</strong><br>
+						Ensayista y filósofo contemporáneo, Guillermo Mas Arellano ha centrado su investigación en la
+						ética, la libertad individual y la conciencia social.
+						Su obra explora cómo el pensamiento crítico y el arte pueden convertirse en herramientas de
+						transformación cultural.
+						En el Lumière Culture Festival presentará la ponencia “La rebelión de la conciencia”, donde
+						invita al público a reflexionar sobre el papel del individuo frente a los sistemas de control y
+						la pérdida de identidad en la era tecnológica.
+						El encuentro con estos ponentes ofrece una oportunidad única para reflexionar sobre el poder del
+						pensamiento y la cultura como motores de cambio.
+						A través de sus ideas, el Lumière Culture Festival reafirma su propósito: encender la luz del
+						conocimiento en cada espectador.</p>
+				</div>
+				<div class="img-ponente">
+					<img src="Images/ponente3.png" alt="Guillermo Mas">
+				</div>
+			</div>
+			<div class="texto-secc">
+				<h1>Ponencia Magistral</h1>
+			</div>
+
+			<div class="fila-ponente">
+				<div class="info-ponente">
+					<p><strong>🎙️ Pável Dúroves</strong><br>
+						Fundador de Telegram, una de las plataformas de mensajería más importantes del mundo, reconocida
+						por su enfoque en la privacidad, la descentralización y la libre expresión. En octubre de 2025,
+						Dúrov emitió una alerta pública sobre el deterioro de la libertad digital y el futuro de
+						internet.
+
+						En un post en X (antes Twitter) afirmó:
+						«I’m turning 41, but I don’t feel like celebrating. Our generation is running out of time to
+						save the free Internet built for us by our fathers.» <a
+							href="https://x.com/durov/status/1976420399970701543">x.com</a></p>
+					<br>
+					<p>“Somos la última generación libre: la luz de la cultura frente al control digital”.
+						Los principales ejes temáticos son:
+						La transformación de internet de un espacio de libre expresión a una herramienta de vigilancia y
+						control. European Conservative
+						Las amenazas actuales a la privacidad, la soberanía digital y la libertad de expresión,
+						ejemplificadas en la introducción de identificaciones digitales, escaneo masivo de mensajes
+						privados y la criminalización de la crítica online. <a
+							href="https://www.ndtv.com/world-news/france-lifts-travel-ban-on-telegram-founder-paveldurov-9630960">ndtv.com</a>
+						La generación contemporánea y su papel: ¿seremos la última que vivió libertad antes de que la
+						perdamos?
+						Estrategias individuales y colectivas para resguardar la cultura digital, la creatividad y la
+						autonomía frente a los sistemas de control.
+					</p>
+				</div>
+				<div class="img-ponente">
+					<img src="Images/ponente4.png" alt="Pável Dúroves">
+				</div>
+			</div>
+
+		</div>
+		<!--contenedor para contenidos de cada sección-->
+		<div class='seccion-contenedor' id="secc4">
+			<!--contenedor para el texto de cada sección-->
+			<div class="texto-secc">
+				<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+				<h1>Literatura</h1>
+				<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+				<p>El Lumière Culture Festival celebra el poder transformador de la palabra escrita.
+					A través de una selección de obras literarias y ensayos que han marcado la historia del pensamiento
+					moderno, el festival invita al público a reflexionar sobre los límites de la libertad, la
+					manipulación del pensamiento y el control social en el mundo contemporáneo.
+					Estas lecturas representan los pilares intelectuales del festival, uniendo la literatura, la
+					psicología y la economía como medios para comprender la condición humana.</p>
+				<br><!--etiqueta para un brinco de renglón-->
+				<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+				<p>📖 1984 — George Orwell
+					Publicada en 1949, esta obra maestra de la distopía política retrata una sociedad sometida a la
+					vigilancia absoluta del Gran Hermano. Orwell advierte sobre los peligros del totalitarismo, la
+					censura y la manipulación de la verdad, temas que hoy resuenan con más fuerza que nunca.
+					Durante el festival se analizará su impacto cultural y su relación con la era digital y la
+					inteligencia artificial.</p>
+				<br>
+				<p>🌍 Un Mundo Feliz — Aldous Huxley
+					Escrita en 1932, esta novela visionaria describe una civilización donde la felicidad es controlada
+					mediante la tecnología, la genética y la manipulación emocional. Huxley plantea una inquietante
+					pregunta:
+					“¿Qué precio estamos dispuestos a pagar por vivir sin dolor ni libertad?”
+					El festival presentará una conferencia que contrasta la utopía artificial de Huxley con los dilemas
+					actuales de la sociedad moderna.</p>
+
+				<br>
+				<p>🧠 The Rape of the Mind: The Psychology of Thought Control — Joost Meerloo
+					Publicado en 1956, este ensayo psicológico analiza los métodos de lavado de cerebro, coerción mental
+					y manipulación ideológica empleados en regímenes totalitarios.
+					Meerloo demuestra cómo el miedo y la propaganda pueden moldear la mente humana, anulando el
+					pensamiento crítico.
+					Durante el evento, se ofrecerá una charla multimedia que explora la vigencia de sus ideas en la era
+					de la información digital.</p>
+				<br>
+				<p>💼 Confesiones de un Sicario Económico — John Perkins
+					En esta impactante obra autobiográfica, Perkins revela su experiencia como consultor financiero que
+					participó en estrategias de dominación económica y política sobre países en desarrollo.
+					El autor desnuda las prácticas de corrupción global y plantea la necesidad de construir un modelo
+					económico más ético y sustentable.
+					Su testimonio sirve como punto de partida para una mesa de diálogo sobre economía, poder y
+					responsabilidad social. </p>
+				<br><!--etiqueta para un brinco de renglón-->
+				<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+					culpa qui officia deserunt mollit anim id est laborum.</p>
+				<br><!--etiqueta para un brinco de renglón-->
+			</div>
+
+
+		</div>
+		<!--contenedor para contenidos de cada sección-->
+		<div class='seccion-contenedor' id="secc5">
+			<!--contenedor para el texto de cada sección-->
+			<div class="texto-secc">
+				<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+				<h1>Cinematografía</h1>
+				<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+				<p>El Lumière Culture Festival propone una reflexión profunda sobre los límites de la libertad, la
+					manipulación de masas y el papel del pensamiento crítico en la era moderna. A través de tres obras
+					cinematográficas de impacto internacional, esta sección invita al espectador a cuestionar los
+					sistemas de poder, los medios de control y la evolución social y económica del mundo contemporáneo.
+				</p>
+				<br>
+				<p>🎞️ Land of the Blind (2006)
+					Dirección: Robert Edwards
+					Protagonistas: Ralph Fiennes, Donald Sutherland
+					Una sátira política ambientada en un país ficticio que podría representar cualquier nación moderna.
+					La historia sigue la transformación de un gobierno autoritario en otro igualmente opresivo,
+					mostrando cómo los ideales revolucionarios pueden corromperse cuando el poder se convierte en el fin
+					último. Temas clave: manipulación política, censura, propaganda, ciclo del poder.
+					“La libertad sin conciencia puede ser tan peligrosa como la tiranía.”
+					En el contexto del festival, Land of the Blind plantea un paralelismo con el discurso de Pável Dúrov
+					sobre la pérdida de libertades: la advertencia de que la sociedad puede ser moldeada por sistemas
+					invisibles de control ideológico.</p>
+				<br>
+				<p>📽️ Zeitgeist: The Movie (2007)
+					Dirección: Peter Joseph
+					Un documental que analiza la estructura de creencias, la economía global y el papel de los medios en
+					la construcción de una visión manipulada de la realidad. Dividido en tres partes —religión,
+					atentados del 11 de septiembre y sistema financiero mundial—, Zeitgeist se convirtió en un fenómeno
+					cultural y digital, símbolo de la búsqueda de verdad fuera del discurso dominante.
+					Temas clave: desinformación, poder financiero, crítica a la globalización, control mediático.
+					“El mayor enemigo del conocimiento no es la ignorancia, sino la ilusión del conocimiento.”
+					En el Lumière Culture Festival, este documental representa la parte despertar: la toma de conciencia
+					del espectador ante las estructuras que determinan su percepción del mundo.</p>
+				<br><!--etiqueta para un brinco de renglón-->
+				<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+				<p>💰 The Money Masters: Los Amos del Dinero (1996)
+					Dirección: William T. Still
+					Un extenso documental que examina la historia de los bancos centrales, el sistema monetario y la
+					concentración del poder financiero en manos privadas. Desde la creación del Banco de Inglaterra
+					hasta la Reserva Federal estadounidense, revela cómo la emisión de dinero y la deuda pública se han
+					convertido en herramientas de control social y político.
+
+					Temas clave: sistema bancario, poder económico, deuda, soberanía nacional.
+					“Quien controla el dinero de una nación, controla la nación.”
+					Esta obra aporta al festival una mirada histórica y estructural, ayudando al público a comprender el
+					origen del sistema financiero actual y su influencia en la libertad individual y colectiva.</p>
+				<br><!--etiqueta para un brinco de renglón-->
+				<p>La selección cinematográfica del Lumière Culture Festival conforma un recorrido visual por las
+					distintas formas de control: político, mediático y financiero. Cada obra dialoga con la otra,
+					configurando un espejo cultural que desafía al espectador a reconocer los mecanismos del poder y a
+					redescubrir su autonomía.
+				</p>
+				<br><!--etiqueta para un brinco de renglón-->
+			</div>
+			<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+
+		</div>
+
+	</main>
+
+	<!------------pie de pagina----------->
+	<!--dentro de la etiqueta footer esta todo lo que sera el pie de página, pudiendo colocarse dentro del body o despues del body-->
+	<footer>
+
+		<div class='footer-item'>
+			<!----modificar el href para que dirija una pagina especifica de facebook----->
+			<a href="https://www.facebook.com/">
+				<img src="imagenes/fbk.png" title="Facebook">
+			</a>
+			<!----modificar el href para que dirija una pagina especifica de twitter----->
+			<a href="https://twitter.com/">
+				<img src="imagenes/twt.png" title="Twitter">
+			</a>
+			<!----modificar el href para que dirija una pagina especifica de instagram----->
+			<a href="http://instagram.com/">
+				<img src="imagenes/inst.png" title="Instagram">
+			</a>
+		</div>
+
+		<div class="copyright">
+			<!----modificarlo con datos o mensaje propio----->
+			<p style="">Margarita Paola Bernal Garcia 2025</p>
+		</div>
+
+	</footer>
+	<!------------------------------------>
+
+	<!---------enlace que regresa al inicio de la pagina--------->
+	<!--dentro de la etiqueta "a" de tipo enlace esta la imagen que actua como icono que regresa al inicio de la página-->
+	<a class="ir-arriba" title="Volver arriba" href="#inicio">
+		<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+		<img src="imagenes/flecha-arriba.png">
+	</a>
+
+</body>
+
+</html>

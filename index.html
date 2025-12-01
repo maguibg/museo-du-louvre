@@ -11,11 +11,11 @@ la estructura que se llenara como se menciona a continuación...-->
 <!--dentro de la etiqueta head esta el encabezado del documento html-->
 
 <head>
-	<title>Museo du Louvre</title> <!--dentro de la etiqueta tittle esta el titulo de la página-->
-	<link rel='stylesheet' href='estilos.css' /> <!--dentro de esta etiqueta esta la referencia a la hoja de estilos-->
+	<title>Museo du Louvre</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel='stylesheet' href='estilos.css' />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" href="Images/LOUVRE.svg" />
-	<!--viewport para trabajar responsive design-->
 </head>
 
 <!------------body de pagina----------->
@@ -27,21 +27,27 @@ la estructura que se llenara como se menciona a continuación...-->
 	<!--dentro de la estiqueta header esta todo lo que sera el encanbezado de la página, pudiendo colocarse dentro del body o antes del body-->
 	<header class='menu-container' id="inicio">
 
-		<div class='identificador'>
-			<!----modificar nombre y ruta de la imagen para cambiar el logo por el propio----->
-			<a href="index.html">
-				<img src="Images/LOUVRE.png"></a>
+		<nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top" style="background-color: #F8F6F0;">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="Images/LOUVRE.png" alt="Louvre" height="50">
+				</a>
 
-		</div>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miMenu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-			<div class='ligas-secciones'>
-			<!----modificar nombre de la seccion acorde a la necesidad----->
-			<a href="#secc1">Sobre el Museo del Louvre</a>
-			<a href="#secc2">Lumière Culture Festival</a>
-			<a href="#secc3">Ponentes</a>
-			<a href="#secc4">Literatura</a>
-			<a href="#secc5">Cinematografía</a>
-		</div>
+				<div class="collapse navbar-collapse" id="miMenu">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item"><a class="nav-link" href="#secc1">Sobre el Museo</a></li>
+						<li class="nav-item"><a class="nav-link" href="#secc2">Lumière Festival</a></li>
+						<li class="nav-item"><a class="nav-link" href="#secc3">Ponentes</a></li>
+						<li class="nav-item"><a class="nav-link" href="#secc4">Literatura</a></li>
+						<li class="nav-item"><a class="nav-link" href="#secc5">Cinematografía</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
 	</header>
 
@@ -69,23 +75,32 @@ la estructura que se llenara como se menciona a continuación...-->
 				<br><!--etiqueta para un brinco de renglón-->
 				<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
 				<p>El Louvre alberga más de 35,000 obras de arte, distribuidas en ocho departamentos:</p>
-				<ul class="texto-secc">
-					<li><em>Antigüedades Egipcias</em></li>
-					<li><em>Antigüedades Griegas, Etruscas y Romanas</em></li>
-					<li><em>Antigüedades del Cercano Oriente</em></li>
-					<li><em>Arte Islámico</em></li>
-					<li><em>Pintura</em></li>
-					<li><em>Escultura</em></li>
-					<li><em>Artes Gráficas</em></li>
-					<li><em>Artes Decorativas</em></li>
+				<ul class="list-group list-group-flush shadow-sm mb-4 rounded"
+					style="max-width: 600px; border: 1px solid #C5A059;">
+
+					<li class="list-group-item" style="background-color: #F8F6F0;">🏺 Antigüedades Egipcias</li>
+					<li class="list-group-item" style="background-color: #F8F6F0;">🏛️ Antigüedades Griegas, Etruscas y
+						Romanas</li>
+					<li class="list-group-item" style="background-color: #F8F6F0;">🕌 Antigüedades del Cercano Oriente
+					</li>
+					<li class="list-group-item" style="background-color: #F8F6F0;">👳 Arte Islámico</li>
+					<li class="list-group-item" style="background-color: #F8F6F0;">🎨 Pintura</li>
+					<li class="list-group-item" style="background-color: #F8F6F0;">🗿 Escultura</li>
+					<li class="list-group-item" style="background-color: #F8F6F0;">✏️ Artes Gráficas</li>
+					<li class="list-group-item" style="background-color: #F8F6F0;">🛋️ Artes Decorativas</li>
+
 				</ul>
 				<br><!--etiqueta para un brinco de renglón-->
 				<p> Entre sus piezas más reconocidas se encuentran:</p>
-				<ul class="lista-sin-puntos">
-					<li>🎨 <em>La Gioconda de Leonardo da Vinci</em></li>
-					<li>🏺 <em>La Venus de Milo</em></li>
-					<li>🗿 <em>La Victoria de Samotracia</em></li>
-					<li><em>y numerosos tesoros del arte universal.</em></li>
+				<ul class="list-group list-group-flush shadow-sm mb-4 rounded"
+					style="max-width: 600px; border: 1px solid #C5A059;">
+					<li class="list-group-item" style="background-color: #F8F6F0;">🎨 <em>La Gioconda de Leonardo da
+							Vinci</em></li>
+					<li class="list-group-item" style="background-color: #F8F6F0;">🏺 <em>La Venus de Milo</em></li>
+					<li class="list-group-item" style="background-color: #F8F6F0;">🗿 <em>La Victoria de Samotracia</em>
+					</li>
+					<li class="list-group-item" style="background-color: #F8F6F0;">✨ <em>y numerosos tesoros del arte
+							universal.</em></li>
 				</ul>
 				<p>Más que un museo, el Louvre es un símbolo del conocimiento, la luz y la preservación cultural, un
 					espacio donde el pasado dialoga con el presente a través del arte. Por ello, el Lumière Culture
@@ -122,14 +137,26 @@ la estructura que se llenara como se menciona a continuación...-->
 					Durante el festival, los asistentes podrán disfrutar de una programación interdisciplinaria que
 					incluye:</p>
 				<br>
-				<ul>
-					<li><em>Charlas con pensadores y escritores contemporáneos.</em></li>
-					<li><em>Reseñas literarias de obras como 1984, Un Mundo Feliz y Confesiones de un sicario económico.
-						</em></li>
-					<li><em>Proyecciones de películas de crítica social como Zeitgeist, Land of the Blind y The Money
-							Masters.</em></li>
-					<li><em>Un recorrido virtual 360° por el Louvre y sus alrededores, donde la arquitectura y la luz se
-							convierten en protagonistas.</em></li>
+				<p>Durante el festival, los asistentes podrán disfrutar de una programación interdisciplinaria que
+					incluye:</p>
+
+				<ul class="list-group list-group-flush shadow-sm mb-4 rounded"
+					style="max-width: 800px; border: 1px solid #C5A059;">
+					<li class="list-group-item" style="background-color: #F8F6F0;">
+						🗣️ <em>Charlas con pensadores y escritores contemporáneos.</em>
+					</li>
+					<li class="list-group-item" style="background-color: #F8F6F0;">
+						📖 <em>Reseñas literarias de obras como 1984, Un Mundo Feliz y Confesiones de un sicario
+							económico.</em>
+					</li>
+					<li class="list-group-item" style="background-color: #F8F6F0;">
+						🎬 <em>Proyecciones de películas de crítica social como Zeitgeist, Land of the Blind y The Money
+							Masters.</em>
+					</li>
+					<li class="list-group-item" style="background-color: #F8F6F0;">
+						👓 <em>Un recorrido virtual 360° por el Louvre y sus alrededores, donde la arquitectura y la luz
+							se convierten en protagonistas.</em>
+					</li>
 				</ul>
 				<br>
 
@@ -150,318 +177,332 @@ la estructura que se llenara como se menciona a continuación...-->
 		</div>
 
 		<!--contenedor para contenidos de cada sección-->
-		<div class='seccion-contenedor' id="secc3" style="display: block;">
-			<div class="texto-secc">
-				<h1>Ponentes</h1>
-				<p>El Lumière Culture Festival reúne a destacados pensadores y autores contemporáneos cuyas obras y
-					reflexiones invitan a analizar la relación entre el poder, la economía, la información y la libertad
-					humana.
+		<div class="container my-5" id="secc3">
 
-					Cada uno de ellos aporta una visión única que enriquece el diálogo entre arte, historia y
-					pensamiento crítico.</p>
-				<br>
+			<div class="text-center mb-5">
+				<h1 class="display-4 fw-bold">Ponentes</h1>
+				<p class="lead text-muted">
+					El Lumière Culture Festival reúne a destacados pensadores y autores contemporáneos cuyas obras
+					invitan a analizar la relación entre el poder, la información y la libertad humana.
+				</p>
 			</div>
 
-			<div class="fila-ponente">
-				<div class="info-ponente">
-					<p><strong>🎙️ Jorge Guerra</strong><br>
-						Autor e investigador independiente centrado en estructuras de poder ocultas, élites financieras
-						y dinámicas históricas no convencionales.
-						Su intervención en el Lumière Culture Festival gira en torno al tema “Nobleza Negra y los
-						poderes ocultos”, donde explorará cómo ciertas redes de influencia, silenciadas o marginales en
-						la historiografía convencional, siguen jugando un papel en la economía, la política y la cultura
-						contemporáneas.</p>
-
-
-				</div>
-
-				<div class="img-ponente">
-					<img src="Images/ponente1.png" alt="Jorge Guerra">
-				</div>
-
-			</div>
-			<div style="display: flex; justify-content: center; align-items: center;">
-				<iframe width="910" height="506" src="https://www.youtube.com/embed/TW3U2jWgRd0" title="JORGE GUERRA"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-			</div>
-
-			<br>
-			<hr>
-			<br>
-			<div class="fila-ponente">
-				<div class="info-ponente">
-					<p><strong>📚 Antony Cyril Sutton (1925–2002)</strong><br>
-						Economista e historiador británico-estadounidense, Antony C. Sutton es reconocido por sus
-						investigaciones sobre la relación entre el poder económico y los conflictos políticos
-						internacionales.
-						Autor de obras como “Wall Street and the Rise of Hitler” y “The Federal Reserve Conspiracy”,
-						Sutton reveló la conexión entre las élites financieras y los grandes movimientos históricos del
-						siglo XX.
-						Su pensamiento, profundamente crítico, inspira el eje temático del festival: la búsqueda de la
-						transparencia, la justicia y el conocimiento histórico como herramientas de emancipación humana.
-						Durante el evento, se proyectarán extractos documentales basados en su legado intelectual.
-					</p>
-				</div>
-				<div class="img-ponente">
-					<img src="Images/ponente2.png" alt="Antony Sutton">
+			<div class="card mb-5 border-0 shadow-sm">
+				<div class="card-body p-4">
+					<div class="row align-items-center">
+						<div class="col-lg-8 mb-4 mb-lg-0">
+							<h3 class="fw-bold">🎙️ Jorge Guerra</h3>
+							<p class="card-text text-justify">
+								Autor e investigador independiente centrado en estructuras de poder ocultas, élites
+								financieras y dinámicas históricas no convencionales.
+								Su intervención en el Lumière Culture Festival gira en torno al tema “Nobleza Negra y
+								los poderes ocultos”, donde explorará cómo ciertas redes de influencia siguen jugando un
+								papel en la economía y política contemporáneas.
+							</p>
+						</div>
+						<div class="col-lg-4 text-center">
+							<img src="Images/ponente1.png" class="img-fluid rounded-circle shadow" alt="Jorge Guerra"
+								style="max-width: 220px;">
+						</div>
+					</div>
 				</div>
 			</div>
-			<div style="display: flex; justify-content: center; align-items: center;">
-				<iframe width="910" height="506" src="https://www.youtube.com/embed/a7GnaH1HWzk" title="SUTTON"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-			</div>
-			<br>
-			<hr>
-			<br>
-			<div class="fila-ponente">
-				<div class="info-ponente">
-					<p><strong>🧠 Guillermo Mas Arellano</strong><br>
-						Ensayista y filósofo contemporáneo, Guillermo Mas Arellano ha centrado su investigación en la
-						ética, la libertad individual y la conciencia social.
-						Su obra explora cómo el pensamiento crítico y el arte pueden convertirse en herramientas de
-						transformación cultural.
-						En el Lumière Culture Festival presentará la ponencia “La rebelión de la conciencia”, donde
-						invita al público a reflexionar sobre el papel del individuo frente a los sistemas de control y
-						la pérdida de identidad en la era tecnológica.
-						El encuentro con estos ponentes ofrece una oportunidad única para reflexionar sobre el poder del
-						pensamiento y la cultura como motores de cambio.
-						A través de sus ideas, el Lumière Culture Festival reafirma su propósito: encender la luz del
-						conocimiento en cada espectador.</p>
-				</div>
-				<div class="img-ponente">
-					<img src="Images/ponente3.png" alt="Guillermo Mas">
-				</div>
-			</div>
-			<div style="display: flex; justify-content: center; align-items: center;">
-				<iframe width="910" height="506" src="https://www.youtube.com/embed/_QqQoAaBjdw"
-					title="GUILLERMO MAS ARELLANO" frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-			</div>
-			<br>
-			<hr>
-			<br>
-			<div class="texto-secc">
-				<h1>Ponencia Magistral</h1>
+			<div class="ratio ratio-16x9 mb-5 shadow rounded overflow-hidden" style="max-width: 900px; margin: 0 auto;">
+				<iframe src="https://www.youtube.com/embed/TW3U2jWgRd0" title="JORGE GUERRA" allowfullscreen></iframe>
 			</div>
 
-			<div class="fila-ponente">
-				<div class="info-ponente">
-					<p><strong>🎙️ Pável Dúroves</strong><br>
-						Fundador de Telegram, una de las plataformas de mensajería más importantes del mundo, reconocida
-						por su enfoque en la privacidad, la descentralización y la libre expresión. En octubre de 2025,
-						Dúrov emitió una alerta pública sobre el deterioro de la libertad digital y el futuro de
-						internet.
+			<hr class="my-5 text-muted">
 
-						En un post en X (antes Twitter) afirmó:
-						«I’m turning 41, but I don’t feel like celebrating. Our generation is running out of time to
-						save the free Internet built for us by our fathers.» <a
-							href="https://x.com/durov/status/1976420399970701543">x.com</a></p>
-					<br>
-					<p>“Somos la última generación libre: la luz de la cultura frente al control digital”.
-						Los principales ejes temáticos son:
-						La transformación de internet de un espacio de libre expresión a una herramienta de vigilancia y
-						control. European Conservative
-						Las amenazas actuales a la privacidad, la soberanía digital y la libertad de expresión,
-						ejemplificadas en la introducción de identificaciones digitales, escaneo masivo de mensajes
-						privados y la criminalización de la crítica online. <a
-							href="https://www.ndtv.com/world-news/france-lifts-travel-ban-on-telegram-founder-paveldurov-9630960">ndtv.com</a>
-						La generación contemporánea y su papel: ¿seremos la última que vivió libertad antes de que la
-						perdamos?
-						Estrategias individuales y colectivas para resguardar la cultura digital, la creatividad y la
-						autonomía frente a los sistemas de control.
-					</p>
-				</div>
-				<div class="img-ponente">
-					<img src="Images/ponente4.png" alt="Pável Dúroves">
+			<div class="card mb-5 border-0 shadow-sm">
+				<div class="card-body p-4">
+					<div class="row align-items-center">
+						<div class="col-lg-8 order-lg-1 order-2">
+							<h3 class="fw-bold">📚 Antony Cyril Sutton (1925–2002)</h3>
+							<p class="card-text text-justify">
+								Economista e historiador británico-estadounidense, reconocido por sus investigaciones
+								sobre la relación entre el poder económico y los conflictos políticos internacionales.
+								Autor de obras como “Wall Street and the Rise of Hitler”, Sutton reveló la conexión
+								entre las élites financieras y los grandes movimientos históricos.
+								Su pensamiento crítico inspira el eje temático del festival: la búsqueda de la
+								transparencia y la justicia.
+							</p>
+						</div>
+						<div class="col-lg-4 text-center order-lg-2 order-1 mb-4 mb-lg-0">
+							<img src="Images/ponente2.png" class="img-fluid rounded-circle shadow" alt="Antony Sutton"
+								style="max-width: 220px;">
+						</div>
+					</div>
 				</div>
 			</div>
-			<div style="display: flex; justify-content: center; align-items: center;">
-				<iframe width="910" height="506" src="https://www.youtube.com/embed/YY-0gLI5Mxs" title="PAVEL DUROV"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			<div class="ratio ratio-16x9 mb-5 shadow rounded overflow-hidden" style="max-width: 900px; margin: 0 auto;">
+				<iframe src="https://www.youtube.com/embed/a7GnaH1HWzk" title="SUTTON" allowfullscreen></iframe>
 			</div>
-			<br>
-			<hr>
-			<br>
+
+			<hr class="my-5 text-muted">
+
+			<div class="card mb-5 border-0 shadow-sm">
+				<div class="card-body p-4">
+					<div class="row align-items-center">
+						<div class="col-lg-8">
+							<h3 class="fw-bold">🧠 Guillermo Mas Arellano</h3>
+							<p class="card-text text-justify">
+								Ensayista y filósofo contemporáneo centrado en la ética, la libertad individual y la
+								conciencia social.
+								Presentará la ponencia “La rebelión de la conciencia”, invitando al público a
+								reflexionar sobre el papel del individuo frente a los sistemas de control y la pérdida
+								de identidad en la era tecnológica.
+								Una oportunidad única para reflexionar sobre el poder del pensamiento como motor de
+								cambio.
+							</p>
+						</div>
+						<div class="col-lg-4 text-center">
+							<img src="Images/ponente3.png" class="img-fluid rounded-circle shadow" alt="Guillermo Mas"
+								style="max-width: 220px;">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ratio ratio-16x9 mb-5 shadow rounded overflow-hidden" style="max-width: 900px; margin: 0 auto;">
+				<iframe src="https://www.youtube.com/embed/_QqQoAaBjdw" title="GUILLERMO MAS ARELLANO"
+					allowfullscreen></iframe>
+			</div>
+
+			<hr class="my-5 text-muted">
+
+			<div class="text-center mb-4">
+				<span class="badge bg-warning text-dark fs-5 px-4 py-2 rounded-pill">⭐ Ponencia Magistral</span>
+			</div>
+
+			<div class="card mb-5 border-0 shadow-lg bg-white">
+				<div class="card-body p-5">
+					<div class="row align-items-center">
+						<div class="col-lg-8 order-lg-1 order-2">
+							<h3 class="fw-bold text-primary">🎙️ Pável Dúroves</h3>
+							<p class="text-muted fst-italic">Fundador de Telegram y defensor de la privacidad.</p>
+							<p class="card-text text-justify">
+								Reconocido por su enfoque en la descentralización y la libre expresión. En octubre de
+								2025, emitió una alerta pública sobre el deterioro de la libertad digital.
+							</p>
+							<figure class="bg-light p-3 border-start border-4 border-warning rounded">
+								<blockquote class="blockquote fs-6">
+									«I’m turning 41... Our generation is running out of time to save the free Internet
+									built for us by our fathers.»
+								</blockquote>
+								<figcaption class="blockquote-footer mt-1">
+									Pável Dúrov en <cite title="Source Title">X.com</cite>
+								</figcaption>
+							</figure>
+							<p>
+								<strong>Ejes temáticos:</strong> La transformación de internet hacia la vigilancia,
+								amenazas a la soberanía digital y estrategias para resguardar la autonomía frente a los
+								sistemas de control.
+							</p>
+						</div>
+						<div class="col-lg-4 text-center order-lg-2 order-1 mb-4 mb-lg-0">
+							<img src="Images/ponente4.png" class="img-fluid rounded shadow" alt="Pável Dúrov"
+								style="max-width: 250px;">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ratio ratio-16x9 mb-5 shadow rounded overflow-hidden" style="max-width: 900px; margin: 0 auto;">
+				<iframe src="https://www.youtube.com/embed/YY-0gLI5Mxs" title="PAVEL DUROV" allowfullscreen></iframe>
+			</div>
 
 		</div>
 		<!--contenedor para contenidos de cada sección-->
-		<div class='seccion-contenedor' id="secc4">
-			<!--contenedor para el texto de cada sección-->
-			<div class="texto-secc">
-				<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
-				<h1>Literatura</h1>
-				<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
-				<p>El Lumière Culture Festival celebra el poder transformador de la palabra escrita.
-					A través de una selección de obras literarias y ensayos que han marcado la historia del pensamiento
-					moderno, el festival invita al público a reflexionar sobre los límites de la libertad, la
-					manipulación del pensamiento y el control social en el mundo contemporáneo.
-					Estas lecturas representan los pilares intelectuales del festival, uniendo la literatura, la
-					psicología y la economía como medios para comprender la condición humana.</p>
-				<br><!--etiqueta para un brinco de renglón-->
-				<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
-				<p>📖 1984 — George Orwell
-					Publicada en 1949, esta obra maestra de la distopía política retrata una sociedad sometida a la
-					vigilancia absoluta del Gran Hermano. Orwell advierte sobre los peligros del totalitarismo, la
-					censura y la manipulación de la verdad, temas que hoy resuenan con más fuerza que nunca.
-					Durante el festival se analizará su impacto cultural y su relación con la era digital y la
-					inteligencia artificial.</p>
-				<br>
-				<div style="display: flex; justify-content: center; align-items: center;">
-					<iframe width="910" height="506" src="https://www.youtube.com/embed/RJvyy2J53VQ" title="1984"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				</div>
-				<br>
-				<hr>
-				<br>
-				<p>🌍 Un Mundo Feliz — Aldous Huxley
-					Escrita en 1932, esta novela visionaria describe una civilización donde la felicidad es controlada
-					mediante la tecnología, la genética y la manipulación emocional. Huxley plantea una inquietante
-					pregunta:
-					“¿Qué precio estamos dispuestos a pagar por vivir sin dolor ni libertad?”
-					El festival presentará una conferencia que contrasta la utopía artificial de Huxley con los dilemas
-					actuales de la sociedad moderna.</p>
-				<br>
-				<div style="display: flex; justify-content: center; align-items: center;">
-					<iframe width="910" height="506" src="https://www.youtube.com/embed/YCFDazgQek4"
-						title="UN MUNDO FELIZ" frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				</div>
-
-				<br>
-				<hr>
-				<br>
-				<p>🧠 The Rape of the Mind: The Psychology of Thought Control — Joost Meerloo
-					Publicado en 1956, este ensayo psicológico analiza los métodos de lavado de cerebro, coerción mental
-					y manipulación ideológica empleados en regímenes totalitarios.
-					Meerloo demuestra cómo el miedo y la propaganda pueden moldear la mente humana, anulando el
-					pensamiento crítico.
-					Durante el evento, se ofrecerá una charla multimedia que explora la vigencia de sus ideas en la era
-					de la información digital.</p>
-				<br>
-				<div style="display: flex; justify-content: center; align-items: center;">
-					<iframe width="910" height="506" src="https://www.youtube.com/embed/t7d5jt4Wv1o"
-						title="THE RAPE OF THE MIND" frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				</div>
-				<br>
-				<hr>
-				<br>
-				<p>💼 Confesiones de un Sicario Económico — John Perkins
-					En esta impactante obra autobiográfica, Perkins revela su experiencia como consultor financiero que
-					participó en estrategias de dominación económica y política sobre países en desarrollo.
-					El autor desnuda las prácticas de corrupción global y plantea la necesidad de construir un modelo
-					económico más ético y sustentable.
-					Su testimonio sirve como punto de partida para una mesa de diálogo sobre economía, poder y
-					responsabilidad social. </p>
-				<br>
-				<div style="display: flex; justify-content: center; align-items: center;">
-					<iframe width="910" height="506" src="https://www.youtube.com/embed/bP5TlhD4PtM"
-						title="CONFESIONES DE UN SICARIO ECONOMICO" frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				</div>
-				<br><!--etiqueta para un brinco de renglón-->
-				<hr>
-				<br>
-
+		<div class="container my-5" id="secc4">
+			<div class="text-center mb-5">
+				<h1 class="display-4 fw-bold">Literatura</h1>
+				<p class="lead">Obras que han marcado la historia del pensamiento moderno.</p>
 			</div>
 
+			<div class="accordion shadow-sm" id="accordionLiteratura">
 
+				<div class="accordion-item" style="background-color: #F8F6F0; border: 1px solid #C5A059;">
+					<h2 class="accordion-header" id="headingOne">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+							style="background-color: #F8F6F0; color: black; box-shadow: none;">
+							📖 <strong>1984</strong> &mdash; George Orwell
+						</button>
+					</h2>
+					<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+						data-bs-parent="#accordionLiteratura">
+						<div class="accordion-body">
+							<p>Publicada en 1949, esta obra maestra de la distopía política retrata una sociedad
+								sometida a la vigilancia absoluta...</p>
+							<div class="ratio ratio-16x9 w-75 mx-auto rounded shadow">
+								<iframe src="https://www.youtube.com/embed/RJvyy2J53VQ" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item"
+					style="background-color: #F8F6F0; border: 1px solid #C5A059; border-top: 0;">
+					<h2 class="accordion-header" id="headingTwo">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+							style="background-color: #F8F6F0; color: black; box-shadow: none;">
+							🌍 <strong>Un Mundo Feliz</strong> &mdash; Aldous Huxley
+						</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+						data-bs-parent="#accordionLiteratura">
+						<div class="accordion-body">
+							<p>Escrita en 1932, describe una civilización donde la felicidad es controlada mediante la
+								tecnología...</p>
+							<div class="ratio ratio-16x9 w-75 mx-auto rounded shadow">
+								<iframe src="https://www.youtube.com/embed/YCFDazgQek4" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item"
+					style="background-color: #F8F6F0; border: 1px solid #C5A059; border-top: 0;">
+					<h2 class="accordion-header" id="headingThree">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+							style="background-color: #F8F6F0; color: black; box-shadow: none;">
+							🧠 <strong>The Rape of the Mind</strong> &mdash; Joost Meerloo
+						</button>
+					</h2>
+					<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+						data-bs-parent="#accordionLiteratura">
+						<div class="accordion-body">
+							<p>Publicado en 1956, este ensayo psicológico analiza los métodos de lavado de cerebro...
+							</p>
+							<div class="ratio ratio-16x9 w-75 mx-auto rounded shadow">
+								<iframe src="https://www.youtube.com/embed/t7d5jt4Wv1o" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item"
+					style="background-color: #F8F6F0; border: 1px solid #C5A059; border-top: 0;">
+					<h2 class="accordion-header" id="headingFour">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+							style="background-color: #F8F6F0; color: black; box-shadow: none;">
+							💼 <strong>Confesiones de un Sicario Económico</strong> &mdash; John Perkins
+						</button>
+					</h2>
+					<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+						data-bs-parent="#accordionLiteratura">
+						<div class="accordion-body">
+							<p>En esta impactante obra autobiográfica, Perkins revela su experiencia como consultor
+								financiero...</p>
+							<div class="ratio ratio-16x9 w-75 mx-auto rounded shadow">
+								<iframe src="https://www.youtube.com/embed/bP5TlhD4PtM" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
 		</div>
 		<!--contenedor para contenidos de cada sección-->
-		<div class='seccion-contenedor' id="secc5">
-			<!--contenedor para el texto de cada sección-->
-			<div class="texto-secc">
-				<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
-				<h1>Cinematografía</h1>
-				<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
-				<p>El Lumière Culture Festival propone una reflexión profunda sobre los límites de la libertad, la
-					manipulación de masas y el papel del pensamiento crítico en la era moderna. A través de tres obras
-					cinematográficas de impacto internacional, esta sección invita al espectador a cuestionar los
-					sistemas de poder, los medios de control y la evolución social y económica del mundo contemporáneo.
-				</p>
-				<br>
-				<p>🎞️ Land of the Blind (2006)
-					Dirección: Robert Edwards
-					Protagonistas: Ralph Fiennes, Donald Sutherland
-					Una sátira política ambientada en un país ficticio que podría representar cualquier nación moderna.
-					La historia sigue la transformación de un gobierno autoritario en otro igualmente opresivo,
-					mostrando cómo los ideales revolucionarios pueden corromperse cuando el poder se convierte en el fin
-					último. Temas clave: manipulación política, censura, propaganda, ciclo del poder.
-					“La libertad sin conciencia puede ser tan peligrosa como la tiranía.”
-					En el contexto del festival, Land of the Blind plantea un paralelismo con el discurso de Pável Dúrov
-					sobre la pérdida de libertades: la advertencia de que la sociedad puede ser moldeada por sistemas
-					invisibles de control ideológico.</p>
-				<br>
-				<div style="display: flex; justify-content: center; align-items: center;">
-					<iframe width="910" height="506" src="https://www.youtube.com/embed/xCOOKXWcuMw"
-						title="LAND OF THE BLIND" frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				</div>
-				<br>
-				<hr>
-				<br>
-				<p>📽️ Zeitgeist: The Movie (2007)
-					Dirección: Peter Joseph
-					Un documental que analiza la estructura de creencias, la economía global y el papel de los medios en
-					la construcción de una visión manipulada de la realidad. Dividido en tres partes —religión,
-					atentados del 11 de septiembre y sistema financiero mundial—, Zeitgeist se convirtió en un fenómeno
-					cultural y digital, símbolo de la búsqueda de verdad fuera del discurso dominante.
-					Temas clave: desinformación, poder financiero, crítica a la globalización, control mediático.
-					“El mayor enemigo del conocimiento no es la ignorancia, sino la ilusión del conocimiento.”
-					En el Lumière Culture Festival, este documental representa la parte despertar: la toma de conciencia
-					del espectador ante las estructuras que determinan su percepción del mundo.</p>
-				<br>
-				<div style="display: flex; justify-content: center; align-items: center;">
-					<iframe width="910" height="506" src="https://www.youtube.com/embed/R5ew5rcuzSE" title="ZEITGEIST"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				</div>
-				<br>
-				<hr>
-				<br>
-				<p>💰 The Money Masters: Los Amos del Dinero (1996)
-					Dirección: William T. Still
-					Un extenso documental que examina la historia de los bancos centrales, el sistema monetario y la
-					concentración del poder financiero en manos privadas. Desde la creación del Banco de Inglaterra
-					hasta la Reserva Federal estadounidense, revela cómo la emisión de dinero y la deuda pública se han
-					convertido en herramientas de control social y político.
+		<div class="container my-5" id="secc5">
 
-					Temas clave: sistema bancario, poder económico, deuda, soberanía nacional.
-					“Quien controla el dinero de una nación, controla la nación.”
-					Esta obra aporta al festival una mirada histórica y estructural, ayudando al público a comprender el
-					origen del sistema financiero actual y su influencia en la libertad individual y colectiva.</p>
-				<br>
-				<div style="display: flex; justify-content: center; align-items: center;">
-					<iframe width="910" height="506" src="https://www.youtube.com/embed/i2YSMcDeEzw"
-						title="THE MONEY MASTERS" frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				</div>
-				<br>
-				<hr>
-				<br>
-				<p>La selección cinematográfica del Lumière Culture Festival conforma un recorrido visual por las
-					distintas formas de control: político, mediático y financiero. Cada obra dialoga con la otra,
-					configurando un espejo cultural que desafía al espectador a reconocer los mecanismos del poder y a
-					redescubrir su autonomía.
-				</p>
-				<br><!--etiqueta para un brinco de renglón-->
+			<div class="text-center mb-5">
+				<h1 class="display-4 fw-bold">Cinematografía</h1>
+				<p class="lead">Un recorrido visual por las distintas formas de control y libertad.</p>
 			</div>
-			<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+
+			<div class="accordion shadow-sm" id="accordionCine">
+
+				<div class="accordion-item" style="background-color: #F8F6F0; border: 1px solid #C5A059;">
+					<h2 class="accordion-header" id="headingCine1">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseCine1" aria-expanded="true" aria-controls="collapseCine1"
+							style="background-color: #F8F6F0; color: black; box-shadow: none;">
+							🎞️ <strong>Land of the Blind</strong> (2006) &mdash; Dir. Robert Edwards
+						</button>
+					</h2>
+					<div id="collapseCine1" class="accordion-collapse collapse show" aria-labelledby="headingCine1"
+						data-bs-parent="#accordionCine">
+						<div class="accordion-body">
+							<p><strong>Protagonistas:</strong> Ralph Fiennes, Donald Sutherland</p>
+							<p>Una sátira política ambientada en un país ficticio. La historia sigue la transformación
+								de un gobierno autoritario en otro igualmente opresivo, mostrando cómo los ideales
+								revolucionarios pueden corromperse.</p>
+							<blockquote class="blockquote fs-6 border-start border-4 ps-3 border-warning">
+								"La libertad sin conciencia puede ser tan peligrosa como la tiranía."
+							</blockquote>
+							<p>En el contexto del festival, plantea un paralelismo con el discurso de Pável Dúrov sobre
+								los sistemas invisibles de control ideológico.</p>
+
+							<div class="ratio ratio-16x9 w-75 mx-auto rounded shadow mt-3">
+								<iframe src="https://www.youtube.com/embed/xCOOKXWcuMw" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item"
+					style="background-color: #F8F6F0; border: 1px solid #C5A059; border-top: 0;">
+					<h2 class="accordion-header" id="headingCine2">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseCine2" aria-expanded="false" aria-controls="collapseCine2"
+							style="background-color: #F8F6F0; color: black; box-shadow: none;">
+							📽️ <strong>Zeitgeist: The Movie</strong> (2007) &mdash; Dir. Peter Joseph
+						</button>
+					</h2>
+					<div id="collapseCine2" class="accordion-collapse collapse" aria-labelledby="headingCine2"
+						data-bs-parent="#accordionCine">
+						<div class="accordion-body">
+							<p>Un documental que analiza la estructura de creencias, la economía global y el papel de
+								los medios en la construcción de una realidad manipulada. Dividido en tres partes:
+								religión, 11-S y sistema financiero.</p>
+							<blockquote class="blockquote fs-6 border-start border-4 ps-3 border-warning">
+								"El mayor enemigo del conocimiento no es la ignorancia, sino la ilusión del
+								conocimiento."
+							</blockquote>
+
+							<div class="ratio ratio-16x9 w-75 mx-auto rounded shadow mt-3">
+								<iframe src="https://www.youtube.com/embed/R5ew5rcuzSE" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item"
+					style="background-color: #F8F6F0; border: 1px solid #C5A059; border-top: 0;">
+					<h2 class="accordion-header" id="headingCine3">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseCine3" aria-expanded="false" aria-controls="collapseCine3"
+							style="background-color: #F8F6F0; color: black; box-shadow: none;">
+							💰 <strong>The Money Masters</strong> (1996) &mdash; Dir. William T. Still
+						</button>
+					</h2>
+					<div id="collapseCine3" class="accordion-collapse collapse" aria-labelledby="headingCine3"
+						data-bs-parent="#accordionCine">
+						<div class="accordion-body">
+							<p>Un extenso documental que examina la historia de los bancos centrales y la concentración
+								del poder financiero. Revela cómo la emisión de dinero y la deuda pública se han
+								convertido en herramientas de control.</p>
+							<blockquote class="blockquote fs-6 border-start border-4 ps-3 border-warning">
+								"Quien controla el dinero de una nación, controla la nación."
+							</blockquote>
+
+							<div class="ratio ratio-16x9 w-75 mx-auto rounded shadow mt-3">
+								<iframe src="https://www.youtube.com/embed/i2YSMcDeEzw" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="mt-5 p-4 rounded shadow-sm" style="background-color: #F8F6F0; border-left: 5px solid #C5A059;">
+				<p class="mb-0 fst-italic text-center">
+					La selección cinematográfica del Lumière Culture Festival conforma un espejo cultural que desafía al
+					espectador a reconocer los mecanismos del poder y a redescubrir su autonomía.
+				</p>
+			</div>
 
 		</div>
 
@@ -501,6 +542,8 @@ la estructura que se llenara como se menciona a continuación...-->
 		<img src="Images/chevron.png">
 	</a>
 
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

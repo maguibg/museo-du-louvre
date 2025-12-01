@@ -40,7 +40,7 @@ header {
   font-family: var(--fuente-secundaria);
   font-size: 24px;
   background-color: var(--color-fondo);
-  height: 130px;
+  height: flex;
   padding-left: 10%;
   padding-right: 10%;
   box-shadow: 0px 1px 8px var(--color-sombra);
@@ -195,7 +195,7 @@ header {
 
   /* Header mobile */
   header {
-    height: 260px;
+    height: flex;
   }
 
   .ligas-secciones {
@@ -608,4 +608,5 @@ footer {
   .img-ponente {
     margin-bottom: 20px;
   }
+
 }

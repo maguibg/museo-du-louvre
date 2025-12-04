@@ -16,6 +16,7 @@ la estructura que se llenara como se menciona a continuación...-->
 	<link rel='stylesheet' href='estilos.css' />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" href="Images/LOUVRE.svg" />
+	<script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
 </head>
 
 <!------------body de pagina----------->
@@ -109,12 +110,49 @@ la estructura que se llenara como se menciona a continuación...-->
 				<br><!--etiqueta para un brinco de renglón-->
 			</div>
 			<!--contenedor para las imagenes de la sección 1, OJO: este tiene un layout para dos imagenes-->
-			<div class="imgs-secc-1">
-				<iframe width="90%" height="500px" allowFullScreen="true"
-					allow="accelerometer; magnetometer; gyroscope; xr-spatial-tracking"
-					style="display:block; margin:20px auto; border:0 none; max-width:880px;border-radius:8px; box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);"
-					src="https://panoraven.com/es/embed/7LCjlf4vpx"></iframe>
+
+			<div class="card shadow-lg mt-5 border-0 rounded overflow-hidden">
+				<div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+					<h5 class="mb-0">👓 Recorrido Virtual: La Pirámide</h5>
+					<span class="badge bg-warning text-dark">360° Interactivo</span>
+				</div>
+
+				<div class="card-body p-0" style="height: 500px;">
+					<a-scene embedded loading-screen="dotsColor: #C5A059; backgroundColor: black">
+
+						<a-assets>
+							<img id="louvre-360" src="Images/360.jpg" crossorigin="anonymous">
+						</a-assets>
+
+						<a-sky src="#louvre-360" rotation="0 -130 0"></a-sky>
+
+						<a-text value="MUSEO DEL LOUVRE" font="exo2bold" align="center" width="10" position="0 3 -4"
+							color="#FFF" shadow="receive: true"></a-text>
+						<a-text value="Patio Napoleon" font="kelsonsans" align="center" width="6" position="0 2.2 -4"
+							color="#C5A059"></a-text>
+
+
+
+						<a-entity camera look-controls>
+							<a-cursor color="#C5A059" scale="1.5 1.5 1.5"
+								animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 150; from: 0.1 0.1 0.1; to: 1 1 1"
+								animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 1500; from: 1 1 1; to: 0.1 0.1 0.1"></a-cursor>
+						</a-entity>
+
+					</a-scene>
+				</div>
+
+				<div class="card-footer text-center" style="background-color: #F8F6F0;">
+					<p class="mb-0 text-muted">
+						<small>🖥️ Usa el mouse para girar | 📱 Mueve tu celular para mirar alrededor | 🥽 Usa el
+							botón "VR" para gafas</small>
+					</p>
+				</div>
 			</div>
+			<div class="card-footer text-muted text-center">
+				<small>Arrastra con el mouse para mirar alrededor o usa gafas VR si estás en celular.</small>
+			</div>
+		</div>
 		</div>
 
 		<!--contenedor para contenidos de cada sección-->
